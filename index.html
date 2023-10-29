@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Player</h1>
+        <h1 id="announcement">Rock Paper Scissors</h1>
+        <h1>Computer</h1>
+    </header>
+    <main>
+        <img width='400' height='400' id="player-choice-img">
+        <section>
+            <div id="input-box">
+                <label for="player-choice-input">Enter rock, paper, or scissors</label>
+                <input id='player-choice-input' type="text">
+                <p id="error-message">Enter a valid choice</p>
+                <div>
+                    <button type="button" value="rock" id="rock">
+                        <img width='70' height='70' src="images/rock.png">
+                    </button>
+                    <button type="button" value="paper" id="paper">
+                        <img width='70' height='70' src="images/paper.png">
+                    </button>
+                    <button type="button" value="scissors" id="scissors">
+                        <img width='70' height='70' src="images/scissors.png">
+                    </button>
+                </div>
+            </div>
+            <div>
+                <button id="reset-button">Reset</button>
+            </div>
+        </section>
+        <img width='400' height='400' id="computer-choice-img">
+    </main>
+    <footer>
+        <h2 id="wins">Wins: 0</h2>
+        <h2 id="ties">Ties: 0</h2>
+        <h2 id="losses">Losses: 0</h2>
+    </footer>
+</body>
+<script src="script.js"></script>
+</html>
